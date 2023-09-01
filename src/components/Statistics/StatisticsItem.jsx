@@ -1,6 +1,6 @@
 import { StyledStatisicItem , Percentage} from "./Statistics.styled"
 
-
+import PropTypes from 'prop-types';
 
 
 const StatisticsItem = ({id,label,percentage}) => {
@@ -11,6 +11,12 @@ const StatisticsItem = ({id,label,percentage}) => {
   </StyledStatisicItem>
   )
 }
+
+StatisticsItem.propTypes = {
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  };
 
 export default StatisticsItem
 
