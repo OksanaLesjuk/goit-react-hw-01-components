@@ -5,21 +5,6 @@ import { ProfileWrap, Description, Fhoto, UserName, StatsList , StatsItem, Quant
 
 
 
-// {
-//     "username": "Jacques Gluke",
-//     "tag": "jgluke",
-//     "location": "Ocho Rios, Jamaica",
-//     "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-//     "stats": {
-//       "followers": 5603,
-//       "views": 4827,
-//       "likes": 1308
-//     }
-//   }
-  
-
-
-
 function Profile({
 username, tag, location, avatar, stats: { followers, views, likes }
       
@@ -56,9 +41,13 @@ username, tag, location, avatar, stats: { followers, views, likes }
   )
 }
 
-// Profile.propTypes = {
-
-// }
+Profile.propTypes = {
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.objectOf(PropTypes.number).isRequired,
+  };
 
 export default Profile
 

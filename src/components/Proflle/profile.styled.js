@@ -8,7 +8,8 @@ export const ProfileWrap = styled('div')(() => {
         borderColor: 'grey',
         boxShadow: `0px 0px 5px 0px #000`,
         borderRadius: '10px',
-        margin: 'auto'
+        margin: 'auto',
+        marginBottom: '40px'
     }
 })
 
