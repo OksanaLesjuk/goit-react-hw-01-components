@@ -1,6 +1,9 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import { ProfileWrap, Description, Fhoto, UserName, StatsList , StatsItem, Quantity} from './profile.styled'
+
+
 
 // {
 //     "username": "Jacques Gluke",
@@ -23,33 +26,33 @@ username, tag, location, avatar, stats: { followers, views, likes }
       
 }) {
   return (
-    <div className="profile">
-  <div className="description">
-    <img
+    <ProfileWrap>
+  <Description>
+    <Fhoto
       src={avatar}
       alt="User avatar"
       className="avatar"
     />
-    <p className="name">{username}</p>
+    <UserName>{username}</UserName>
     <p className="tag">@{tag}</p>
     <p className="location">{location}</p>
-  </div>
+  </Description>
 
-  <ul className="stats">
-    <li>
+  <StatsList>
+    <StatsItem>
       <span className="label">Followers</span>
-    <span className="quantity">{followers}</span>
-    </li>
-    <li>
+    <Quantity>{followers}</Quantity>
+    </StatsItem>
+    <StatsItem>
       <span className="label">Views</span>
-      <span className="quantity">{views}</span>
-    </li>
-    <li>
+      <Quantity>{views}</Quantity>
+    </StatsItem>
+    <StatsItem>
       <span className="label">Likes</span>
-      <span className="quantity">{likes}</span>
-    </li>
-  </ul>
-</div>
+      <Quantity>{likes}</Quantity>
+    </StatsItem>
+  </StatsList>
+</ProfileWrap>
   )
 }
 
