@@ -9,7 +9,8 @@ export const ProfileWrap = styled('div')(() => {
         boxShadow: `0px 0px 5px 0px #000`,
         borderRadius: '10px',
         margin: 'auto',
-        marginBottom: '40px'
+        marginBottom: '40px',
+        color: '#9c9b9b',
     }
 })
 
@@ -28,15 +29,18 @@ export const Description = styled('div')(() => {
 export const Fhoto = styled('img')(() => {
     return {
         display: 'block',
-        width: '100%',
+        width: '70%',
         margin: 'auto',
+        borderRadius: '50%',
+        backgroundColor: 'rgba(173, 216, 230, 0.5)'
     }
 })
 
 export const UserName = styled('p')(() => {
     return {
         fontSize: '20px',
-        fontWeight: '700'
+        fontWeight: '700',
+        color: 'black'
     }
 })
 
@@ -58,13 +62,15 @@ export const StatsItem = styled('li')(() => {
         flexDirection: 'column',
         alignItems: 'center',
         border: '1px solid #ccc',
-        padding: '10px'
+        paddingTop: '25px',
+        paddingBottom: '25px'
     }
 })
 
 export const Quantity = styled('span')(() => {
     return {
         fontSize: '20px',
-        fontWeight: '700'
+        fontWeight: '700',
+        color: 'black'
     }
 })
