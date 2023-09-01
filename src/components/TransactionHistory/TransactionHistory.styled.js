@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Table = styled.table(() => {
     return {
         display: 'block',
-        width: '70%',
+        width: '600px',
         marginLeft: 'auto',
         marginRight: 'auto',
         borderCollapse: 'collapse',
