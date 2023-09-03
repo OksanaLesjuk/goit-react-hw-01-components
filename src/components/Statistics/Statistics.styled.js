@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import getRandomHexColor from './random-color';
 
 
 export const StatisticsWrap = styled('section')(() => {
@@ -36,24 +35,4 @@ export const StatisticList = styled('ul')(() => {
     }
 })
 
-export const StyledStatisicItem = styled('li')(() => {
-    return {
-        flex: '1',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingBottom: '20px',
-        paddingTop: '20px',
-        border: '1px solid #ccc',
-        backgroundColor: getRandomHexColor()
 
-    }
-})
-export const Percentage = styled('span')(() => {
-    return {
-        fontSize: '20px',
-        fontWeight: '700'
-    }
-
-})
